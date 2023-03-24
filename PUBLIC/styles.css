@@ -1,0 +1,476 @@
+/* Default styles for all devices */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+   
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  padding: 100%px;
+}
+
+ul li a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  
+}
+.sixth {
+  border-radius: 3em;
+  border-color: #32a852;
+  color: #32a852;
+  background: linear-gradient(to bottom, transparent 50%, #000000 50%);
+  background-position: 0% 0%;
+  background-size: 210%;
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sixth:hover {
+  color: #ffffff;
+  background-position: 0 100%;
+}
+
+
+
+
+main {
+  position: relative;
+  height: 60vh;
+  background-image: url(/PUBLIC/images/motor.png);
+  background-size: 33%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position-x:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding-top:5%;
+  
+  ;
+  
+  
+
+  /* Center the image horizontally and vertically */
+}
+
+
+.content-container {
+  display: flex;
+  flex: 1;
+  margin-right: 50%;
+  
+  
+  
+}
+.content{
+  font-size: 13px;
+  flex: 1;
+  
+  
+  
+}
+
+
+
+
+.right-side {
+  flex: 1;
+  text-align: center;
+  flex-basis: 100%;
+  width: 40%;
+  margin-right: 43.5%;
+    
+}
+.grabber h2 {
+  color:white;
+  font-size: 120%;
+  margin-right: 100px;
+  font-family:  'Lato', sans-serif;
+  background-color: black;
+  
+  
+  
+}
+.quote {
+  margin-right: 19%;
+  background-color: #a6fc09;
+    color: #000000;
+  border: 2px solid #4caf50; /* Green */
+  padding: 10px;
+  
+  ;
+}
+.quote :hover{
+  background-color: #666;
+
+}
+
+
+
+
+
+
+  
+  
+
+
+
+
+.about-info-text h2 {
+  margin-bottom: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: .9;
+}
+.about-info-text p {
+  padding: 0 100px;
+  font-size: 18px;
+  margin-bottom: 26px;
+    position: relative;
+}
+.about-content p {
+  margin-bottom: 0;
+}
+.about-info-text a {
+  margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+
+
+.col-lg-4 {
+  background-color: #000000;
+}
+.serve{
+  background-image: url('/PUBLIC/images/wallpaper.jpg') ;
+  padding-top: 1px;
+  
+}
+.card{
+  background-color: #000000;
+  color: white;
+  opacity: 0.9;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+  color: #fcf109;
+}
+
+.container.mt-5 h4.text-center{
+  font-size: 35px;
+  color: #a6fc09;
+  
+}
+
+.col-lg-4{
+  opacity: 0.9;
+}
+
+.about{
+  
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: yellow;
+    padding: 40px;
+    background-color: #000000;
+  
+  
+}
+.about-title h4{
+  font-size: 35px;
+}
+.about .h4 h2{
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #444;
+
+}
+
+.instagram img{
+  width: 95px;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.socials{
+  display:flex;
+  align-items: center;
+  margin-left: 60%;
+  
+}
+.socials p{
+  font-family: 'Lato', sans-serif;
+  color: white;
+ 
+}
+/* Center the form on the page */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Style the labels */
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Style the input fields */
+input,
+textarea {
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #d62828;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #d62828;
+}
+
+/* Add a background and some padding to the form */
+form {
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+/* Add some spacing between form elements */
+div {
+  margin-bottom: 1rem;
+}
+
+
+/* TESTING STYLES */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+svg {
+  display: block;
+  font: 4em "Montserrat";
+  width: 700px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 14%;
+  stroke-width: 2px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #a6fc09;
+  animation-delay: -0.5;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #fcf109;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #d7fc09;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #a6fc09;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #45fc09;
+  animation-delay: -5s;
+}
+.text-copy:nth-child(6) {
+  stroke: #0ff67f;
+  animation-delay: -6s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+
+/* Media queries for iPhone */
+
+@media only screen and (max-width: 768px) {
+ 
+  
+  header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+  header {
+    flex-wrap: wrap; /* allow the contents to wrap */
+    justify-content: center; /* center the contents horizontally */
+    height: auto;
+  }
+
+  ul li a{
+    font-size: 16px;
+    
+  }
+  main{
+    height: 40vh;
+    background-size: 50%;
+    background-position-x: 12rem;
+    background-position-y: 7.29rem;
+
+  }
+  .right-side {
+    width: 135%;
+    
+    margin-left:250px ;
+    font-size: 18x;
+    
+    
+    
+  }
+  .socials{
+   display: none;
+  }
+  .quote {
+    margin-right: 100px;
+    margin-bottom: 52.5%;
+    background-color: #a6fc09;
+    color: #000000;
+  
+  }
+  
+  
+ 
+  .content{
+    font-size: 8px;
+  margin-left: 10%;
+  margin-top: 100px;
+  }
+  .service-title h4{
+    font-size:25px ;
+    color: #a6fc09;
+  }
+  .mb-3{
+    opacity: 0.8;
+  }
+
+  
+  
+  .about-info-text p{
+    margin: 0;
+    padding: 0;
+    font-size:100%;
+  }
+ 
+  
+  
+}
+
+@media only screen and (min-width: 768px){
+  
+
+
+}
+
+
+@media only screen and (max-width: 1130px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo img {
+    width: 100px;
+    padding-top: 32px;
+  }
+  header {
+    flex-wrap: wrap; /* allow the contents to wrap */
+    justify-content: center; /* center the contents horizontally */
+    height: auto;
+  }
+
+  li a {
+    font-size: 12px;
+    padding: 12px;
+  }
+  main {
+    padding: 10% 5%;
+    border: none;
+  }
+  .content-left {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+  .middle-div img {
+    max-width: 100%;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .grabber h2 {
+    font-size: 100%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 1221px) {
+  .grabber h2 {
+    font-size: 100%;
+  }
+}

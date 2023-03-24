@@ -1,0 +1,114 @@
+<section class="service-grid pb-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 text-center mb-4">
+            <div class="service-title">
+              <h4>Our Services</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h4>Wash Plans</h4>
+              <p>
+                Our customizable car wash plans are designed to keep your
+                vehicle looking its best all year round. Choose from a variety
+                of packages that include regular maintenance, deep cleaning, and
+                protective treatments. Keep your car shining and boost its
+                resale value with our top-quality wash plans.
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="far fa-chart-bar"></i>
+              </div>
+              <h4>headlight Resoration</h4>
+              <p>
+                Enhance your car's aesthetics and safety with our advanced
+                headlight restoration services. Our team of experts will remove
+                oxidation, haze, and yellowing to restore your headlights'
+                clarity and brightness. Drive with confidence in any weather
+                condition with crystal-clear headlights.
+              </p>
+             
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>Paint Correction</h4>
+              <p>
+                Restore Your Car's Flawless Finish Description: Remove unsightly
+                swirl marks, scratches, and oxidation with our professional
+                paint correction services. Our team of skilled technicians
+                utilizes industry-leading techniques and products to restore
+                your vehicle's paint to its original glory. Experience the true
+                potential of your car's appearance with our unmatched paint
+                correction solutions.
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h4>Ceramic Coating</h4>
+              <p>
+                Guard your vehicle against harsh environmental elements with our
+                premium ceramic coating services. Our nano-ceramic technology
+                provides a durable, hydrophobic layer that protects your car's
+                paint from scratches, UV rays, and chemical damage. Experience
+                long-lasting shine and easy maintenance with our top-of-the-line
+                ceramic coating solutions.
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <h4>Truck Fleet Wash</h4>
+              <p>
+                Maintain a clean and professional image with our efficient truck
+                fleet wash services. We offer customizable packages to suit your
+                fleet size and specific requirements. Our expert team uses
+                environmentally friendly methods and products to provide deep
+                cleaning and protection for your trucks. Choose us for a
+                spotless fleet that speaks volumes about your business.
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-3">
+            <div class="service-wrap">
+              <div class="service-icon">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <h4>Any Other Custom Service</h4>
+              <p>
+                Our custom auto detailing services cater to your unique
+                requirements, offering personalized solutions to achieve your
+                desired results. From interior deep cleaning to specialized
+                paint protection, our team of professionals will deliver
+                unmatched quality and attention to detail. Experience the
+                ultimate in automotive care with our tailor-made services.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
