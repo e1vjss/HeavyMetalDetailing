@@ -37,6 +37,9 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Calendly badge widget begin -->
+
+<!-- Calendly badge widget end -->
   </head>
   <body>
     <header>
@@ -53,9 +56,9 @@
       <nav>
         <ul class="navbar">
           
-          <li><a href="#" class="sixth">Services</a></li>
-          <li><a href="#" class="sixth">Contact</a></li>
-          <li><a href="#" class="sixth">About</a></li>
+          <li><a href="#services" class="sixth">Services</a></li>
+          <li><a href="quote.html" class="sixth">Contact</a></li>
+          <li><a href="#abouts" class="sixth">About</a></li>
         </ul>
       </nav>
     </header>
@@ -113,15 +116,24 @@
         </p>
       </div>
     </main>
+    <!-- Calendly inline widget begin -->
+
+<!-- Calendly inline widget end -->
     <section class="serve">
       <div class="container mt-5">
-        <h4 class="text-center mb-4">Our Services</h4>
+        <h4 id='services' class="text-center mb-4">Our Services</h4>
+        <p class="disclaimer-text">
+          Please note that wash plans appointment are official appointments. For all other services, the appointment is for a pre-detailing inspection only. We will schedule another date to follow up with the service. Thank you for choosing Heavy Metal Detailing.
+        </p>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body ">
                 <h5 class="card-title">Wash Plans</h5>
                 <p class="card-text">Our customizable car wash plans are designed to keep your vehicle looking its best all year round. Choose from a variety of packages that include regular maintenance, deep cleaning, and protective treatments. Keep your car shining and boost its resale value with our top-quality wash plans.</p>
+                <li>Sedans: $75</li>
+                <li>Trucks: $100</li>
+                <button class="btn btn-primary" id="wash-plan-btn">Book Now</button>
               </div>
             </div>
           </div>
@@ -129,7 +141,10 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Headlight Restoration</h5>
+                
                 <p class="card-text">Enhance your car's aesthetics and safety with our advanced headlight restoration services. Our team of experts will remove oxidation, haze, and yellowing to restore your headlights' clarity and brightness. Drive with confidence in any weather condition with crystal-clear headlights.</p>
+                <li>Price Determined After Pre-Detailing Inspection</li>
+                <button class="btn btn-primary Pre-detailing" >Schedule Inspection</button>
               </div>
             </div>
           </div>
@@ -138,6 +153,8 @@
               <div class="card-body">
                 <h5 class="card-title">Paint Correction</h5>
                 <p class="card-text">Remove unsightly swirl marks, scratches, and oxidation with our professional paint correction services. Our team of skilled technicians utilizes industry-leading techniques and products to restore your vehicle's paint to its original glory. Experience the true potential of your car's appearance with our unmatched paint correction solutions.</p>
+                <li>Price Determined After Pre-Detailing Inspection</li>
+                <button class="btn btn-primary Pre-detailing" >Schedule Inspection</button>
               </div>
             </div>
           </div>
@@ -146,6 +163,8 @@
               <div class="card-body">
                 <h5 class="card-title">Ceramic Coating</h5>
                 <p class="card-text">Guard your vehicle  harsh environmental elements with our premium ceramic coating services. Our nano-ceramic technology provides a durable, hydrophobic layer that protects your car's paint from scratches, UV rays, and chemical damage. Experience long-lasting shine and easy maintenance with our top-of-the-line ceramic coating solutions.</p>
+                <li>Price Determined After Pre-Detailing Inspection</li>
+                <button class="btn btn-primary Pre-detailing" ">Schedule Inspection</button>
               </div>
             </div>
           </div>
@@ -154,6 +173,9 @@
               <div class="card-body">
                 <h5 class="card-title">Truck Fleet Wash</h5>
                 <p class="card-text">Your fleet vehicles are a representation of your company, and we understand the importance of maintaining a professional image. Our specialized truck fleet wash services are designed to keep your vehicles looking sharp and presentable, no matter how tough the job gets. We use the latest techniques and equipment to provide a thorough clean that removes dirt, grime, and other buildup. Trust us to keep your fleet shining bright and your company's reputation intact.</p>
+                <li>Price Determined After Pre-Detailing Inspection</li>
+                <button class="btn btn-primary Pre-detailing" ">Schedule Inspection</button>
+                
 
               </div>
             </div>
@@ -162,13 +184,15 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Other Personalized Services</h5>
-                <p class="card-text">We understand that every customer has unique needs, which is why we offer personalized services to meet your specific requirements. Our team of experts is dedicated to providing a customized solution that fits your needs and budget. Whether you need a full car detailing service or a specific area cleaned, we have the skills and expertise to get the job done right. Trust us to provide personalized services that exceed your expectations and leave your vehicle looking and feeling like new.</p>              </div>
+                <p class="card-text">We understand that every customer has unique needs, which is why we offer personalized services to meet your specific requirements. Our team of experts is dedicated to providing a customized solution that fits your needs and budget. Whether you need a full car detailing service or a specific area cleaned, we have the skills and expertise to get the job done right. Trust us to provide personalized services that exceed your expectations and leave your vehicle looking and feeling like new.</p>
+                <button class="btn btn-primary Pre-detailing" >Schedule Inspection</button>             
+               </div>
             </div>
           </div>
     </section>
     
     
-    <section class="about">
+    <section id="abouts" class="about">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-4">
@@ -210,12 +234,54 @@
         </div>
       </div>
     </section>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+      document.getElementById("wash-plan-btn").addEventListener("click", function() {
+        Calendly.initPopupWidget({
+          url: 'https://calendly.com/heavymetals/wash-appointments',
+          prefill: {
+            customAnswers: {
+              a1: 'Wash Plans',
+              a2: 'Full Service Wash - 3 Hour Window'
+            }
+          },
+        
+      
+          parentElement: document.body
+        });
+        return false;
+      });
+      document.querySelectorAll(".Pre-detailing").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    Calendly.initPopupWidget({
+      url: 'https://calendly.com/heavymetals/pre-detailing-inspection',
+      prefill: {
+        customAnswers: {
+          a1: 'Detailing',
+          a2: 'Exterior Detail - 6 Hour Window'
+        }
+      },
+      text: 'Schedule time for a wash appointment',
+      color: '#88f71a',
+      textColor: '#2fe80d',
+      branding: true,
+      parentElement: document.body
+    });
+    return false;
+  });
+});
+
+      
+    </script>
     <script src="../server.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
     
   </body>
+  
 </html>

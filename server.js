@@ -9,6 +9,13 @@ dotenv.config();
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 const app = express();
+const cors = require('cors');
+
+// Enable CORS for all routes
+app.use(cors());
+
+
+app.use(express.static('public', { type: 'text/css' }));
 
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');

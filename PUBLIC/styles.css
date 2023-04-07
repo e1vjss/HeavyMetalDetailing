@@ -24,7 +24,12 @@ header {
 .navbar {
   display: flex;
   list-style-type: none;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
+  padding-top: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
 }
 
 ul li a {
@@ -174,6 +179,7 @@ main {
   
 }
 .card{
+  
   background-color: #000000;
   color: white;
   opacity: 0.9;
@@ -343,24 +349,59 @@ svg {
   100% {
     stroke-dashoffset: -35%;
   }
+
 }
+.disclaimer-text{
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: yellow;
+  padding: 20px 0;
+  font-style: italic;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.btn-primary{
+  margin-top: 1rem;
+  color: white;
+  background-color: #5f09fc;
+  border-color: #000;
+}
+.card-text{
+  margin-bottom: 1rem;
+}
+.card li{
+  color: yellow;
+}
+
+
+
+
+
 
 
 /* Media queries for iPhone */
 
 @media only screen and (max-width: 768px) {
  
+ 
   
   header ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+    
   }
- 
+  
   header {
     flex-wrap: wrap; /* allow the contents to wrap */
     justify-content: center; /* center the contents horizontally */
     height: auto;
+    
   }
 
   ul li a{
@@ -378,7 +419,6 @@ svg {
     width: 135%;
     
     margin-left:250px ;
-    font-size: 18x;
     
     
     
@@ -400,6 +440,7 @@ svg {
     font-size: 8px;
   margin-left: 10%;
   margin-top: 100px;
+  
   }
   .service-title h4{
     font-size:25px ;
@@ -416,16 +457,25 @@ svg {
     padding: 0;
     font-size:100%;
   }
- 
+ .navbar{
+  padding-top: 1px;
+ }
+ html, body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
   
   
 }
-
-@media only screen and (min-width: 768px){
-  
-
-
+.disclaimer-text{
+  padding: 0px;
+  margin:1px
 }
+/* Change badge widget background color */
+
+
+
 
 
 @media only screen and (max-width: 1130px) {
