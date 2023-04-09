@@ -51,7 +51,8 @@ app.post('/send-email', async (req, res) => {
 
 // Route for the index page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  const indexPath = path.join(__dirname, 'public', 'index.html');
+  res.sendFile(indexPath);
 });
 
 const PORT = process.env.PORT || 3000;
