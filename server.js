@@ -1,22 +1,33 @@
 const ejs = require('ejs');
+
 const express = require('express');
 const dotenv = require('dotenv');
-const path = require('path');
+const path = require('path')
 dotenv.config();
+
 
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 const app = express();
-const cors = require('cors');
 
+const cors = require('cors');
 app.use(express.json());
+
+// Enable CORS for all routes
 app.use(cors());
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.static('public', { type: 'text/css' }));
+
+app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Serve static files from the public folder
+app.use(express.static('public'));
+
 
 // Configure SendGrid with your API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -25,11 +36,11 @@ app.post('/send-email', async (req, res) => {
   const { firstName, lastName, email, phoneNumber, description } = req.body;
 
   const msg = {
-    to: 'e1vjs@icloud.com',
+    to: 'e1vjs@icloud.com', // your email address to receive the message
     from: {
-      email: 'beast910@icloud.com',
-      name: 'Heavy Metal Detailing',
-    },
+        email:'beast910@icloud.com',
+        name: "Heavy Metal Detailing" },
+        // the sender's email address
     subject: 'Clients Car Info',
     html: `
       <p><strong>Name:</strong> ${firstName} ${lastName}</p>
@@ -46,16 +57,14 @@ app.post('/send-email', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send('Error sending email');
+    
   }
 });
-
-// Route for the index page
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+
