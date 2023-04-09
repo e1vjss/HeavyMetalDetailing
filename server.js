@@ -51,7 +51,7 @@ app.post('/send-email', async (req, res) => {
 
 // Route for the index page
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
