@@ -14,14 +14,14 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '/public/index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Configure SendGrid with your API key
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 app.post('/send-email', async (req, res) => {
   const { firstName, lastName, email, phoneNumber, description } = req.body;
