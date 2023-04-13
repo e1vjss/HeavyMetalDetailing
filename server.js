@@ -43,7 +43,7 @@ app.post('/send-email', async (req, res) => {
 
   try {
     await sgMail.send(msg);
-    const filePath = path.join(__dirname, 'public', 'thankyou.html');
+    const filePath = path.join(__dirname, 'PUBLIC', 'thankyou.html');
     res.status(200).sendFile(filePath);
   } catch (error) {
     console.error(error);
