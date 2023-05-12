@@ -27,7 +27,7 @@ app.post('/send-email', async (req, res) => {
   const { firstName, lastName, email, phoneNumber, description } = req.body;
 
   const msg = {
-    to: 'e1vjs@icloud.com', // your email address to receive the message
+    to: 'heavymetaldetailing422@gmail.com', // your email address to receive the message
     from: {
         email:'beast910@icloud.com',
         name: "Heavy Metal Detailing" },
